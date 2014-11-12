@@ -20,14 +20,32 @@
 //Write echo statement to print operators and operand to user.
 echo "Welcome to my Calculator, Result for $calc['operand1'] $calc['operator'] $calc['operand2'] is : ";
 
+$calc = Array('operand1'=>4, 'operand2'=>6, 'operator'=>'+');
+
 
 //Write switch statement to accept operator as a key, and write logic for calculation
 $key = $calc['operator'];
 
 Switch($key)
 {
-	//cases and calculation logic for all operators
+  case '+':
+	echo "$calc[operand1] + $calc[operand2]";
+		break;
+      case '-':
+  	echo "$calc[operand1] - $calc[operand2]";
+		break;
+     case '*':
+    echo "$calc[operand1] * $calc[operand2]";
+		break;
+     case '/':
+    echo "$calc[operand1] / $calc[operand2]";
+		break;
+     case '%':
+    echo "$calc[operand1] % $calc[operand2]";
+		break;
 }
+
+echo $calc['operand1']['operator']['operand2'];
 
 
 
