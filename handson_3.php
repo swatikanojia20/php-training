@@ -16,17 +16,43 @@
 * Options : Pakistan, Sri Lanka, India, England 
 */
 //Define a constant below
+define(ANSWER, India)
 //Declare an answer array and hardcode the correct answer in it.
 
 $answer = array('A1' =>'Pakistan' , 'A2' => 'India' );
-$answer1= array('ans2'=>'India');
-	$answer2 = array('ans2'=>$answer);
-	echo $answer2['ans2']['A2'];
+
+	echo $answer['A2'];
 
 
 //Write echo statement to print question to user.
 	echo "Who is the winner of ICC WORLD CUP 2012?";
 //Write echo statement to print all options
+	echo "Pakistan";
+echo "<br>";
+echo "SriLanka";
+echo "<br>"
+echo "India";
+echo "<br>"
+echo "England";
+echo "<br>"
 //Write logic to find whether given answer is correct or not using if else.
+if ($answer=="Pakistan") {
+	echo "This answer is incorrect";
+}
+elseif ($answer=="SriLanka") {
+	echo "This answer is incorrect";
+}
+elseif ($answer=="India") {
+	echo "This answer is correct";
+}
+elseif ($answer=="England") {
+	echo "This answer is incorrect";
+}
+else{
+
+echo "Above are all wrong";
+
+}
+
   
 ?>
